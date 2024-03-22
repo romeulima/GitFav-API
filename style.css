@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, button, input{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body{
+    background: #000;
+}
+
+#app{
+    max-width: 70rem;
+    margin: 7.188rem auto 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 5.438rem;
+}
+
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-wrapper input{
+    padding: 1rem;
+    width: 26.875rem;
+
+    border: none;
+    border-radius: 0.313rem;
+    background: #06181C;
+
+    font-size: 1rem;
+    color: #7C7C8A;
+    
+}
+
+.search-wrapper button{    
+    border-radius: 0.313rem;
+    background: #065E7C;
+    padding: 0.75rem 2rem;
+    height: 3.125rem;
+    border: none;
+
+    color: #FFF;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5rem; 
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    transition: all .5s;
+
+    cursor: pointer;
+}
+
+.search-wrapper button:hover{    
+    background: #fff;
+    color: #065E7C;
+}
+
+.search-wrapper button i{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* table */
+
+.table-wrapper{
+    border: 1px solid #4A808C;
+    border-radius: 0.75rem;
+
+    overflow: hidden;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table *{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 160%;
+
+    color: #E1E1E6;
+}
+
+thead th{
+    background-color: #092D38;
+    padding: 1rem 1.5rem 1rem 2.5rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(6, 24, 28, 1);
+    border-top: 1px solid #4A808C;
+    border-bottom: 1px solid #4A808C;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgba(6, 22, 27, 0.5);
+}
+
+tbody td{
+    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+}
+
+tbody .remove{
+    background: transparent;
+    color: #F75A68;
+    border: none;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all .3s;
+}
+
+tbody .remove:hover{
+    transform: scale(1.1);
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: left;
+}
+
+td.user a{
+    text-decoration: none;
+}
+
+td.user a span{
+   font-weight: normal;
+}
+
+td.user img{
+    width: 3.5rem;
+    height: 3.5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}

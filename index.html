@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/logo.svg" alt="Logo do Site">
+            <div class="search-wrapper">
+                <div class="input-wrapper">
+                    <label class="sr-only" for="search">Digite o Github username que quer favoritar</label>
+                    <input id="search" type="text" placeholder="Digite o Github username que quer favoritar">
+                </div>
+                <button>
+                    <i class="ph ph-star"></i>
+                    Favoritar
+                </button>
+            </div>
+        </header>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Repositories</th>
+                        <th>Followers</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="user">
+                            <img src="https://github.com/romeulima.png" alt="Imagem do Usuário">
+                            <a href="https://github.com/romeulima" target="_blank">
+                                <p>Romeu Lima</p>
+                                <span>/romeulima</span>
+                            </a>
+                        </td>
+                        <td class="repositories">123</td>
+                        <td class="followers">1234</td>
+                        <td><button class="remove">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td class="user">
+                            <img src="https://github.com/maykbrito.png" alt="Imagem do Usuário">
+                            <a href="https://github.com/maykbrito" target="_blank">
+                                <p>Mayk Brito</p>
+                                <span>/maykbrito</span>
+                            </a>
+                        </td>
+                        <td class="repositories">123</td>
+                        <td class="followers">1234</td>
+                        <td><button class="remove">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td class="user">
+                            <img src="https://github.com/diego3g.png" alt="Imagem do Usuário">
+                            <a href="https://github.com/diego3g" target="_blank">
+                                <p>Diego Fernandes</p>
+                                <span>/diego3g</span>
+                            </a>
+                        </td>
+                        <td class="repositories">123</td>
+                        <td class="followers">1234</td>
+                        <td><button class="remove">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
