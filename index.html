@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitFav</title>
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
+    <script src="./js/index.js" type="module" defer></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,45 +35,14 @@
                         <th>Ação</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="user">
-                            <img src="https://github.com/romeulima.png" alt="Imagem do Usuário">
-                            <a href="https://github.com/romeulima" target="_blank">
-                                <p>Romeu Lima</p>
-                                <span>/romeulima</span>
-                            </a>
-                        </td>
-                        <td class="repositories">123</td>
-                        <td class="followers">1234</td>
-                        <td><button class="remove">Remover</button></td>
-                    </tr>
-                    <tr>
-                        <td class="user">
-                            <img src="https://github.com/maykbrito.png" alt="Imagem do Usuário">
-                            <a href="https://github.com/maykbrito" target="_blank">
-                                <p>Mayk Brito</p>
-                                <span>/maykbrito</span>
-                            </a>
-                        </td>
-                        <td class="repositories">123</td>
-                        <td class="followers">1234</td>
-                        <td><button class="remove">Remover</button></td>
-                    </tr>
-                    <tr>
-                        <td class="user">
-                            <img src="https://github.com/diego3g.png" alt="Imagem do Usuário">
-                            <a href="https://github.com/diego3g" target="_blank">
-                                <p>Diego Fernandes</p>
-                                <span>/diego3g</span>
-                            </a>
-                        </td>
-                        <td class="repositories">123</td>
-                        <td class="followers">1234</td>
-                        <td><button class="remove">Remover</button></td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
+            <div class="empty-favorites hide">
+                <header>
+                    <img src="./assets/star-empty.svg" alt="Logo de uma estrela mostrado no centro da tela, indicando que a tabela não está preenchida">
+                    <h2>Nenhum favorito ainda</h2>
+                </header>
+            </div>
         </div>
     </div>
 </body>

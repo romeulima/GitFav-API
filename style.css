@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -31,7 +31,7 @@ body{
     margin: 7.188rem auto 0;
 }
 
-header{
+#app > header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,8 +54,11 @@ header{
     background: #06181C;
 
     font-size: 1rem;
+    color: #fff;
+}
+
+.search-wrapper input::placeholder{
     color: #7C7C8A;
-    
 }
 
 .search-wrapper button{    
@@ -99,6 +102,7 @@ header{
     border-radius: 0.75rem;
 
     overflow: hidden;
+    max-height: 43rem;
 }
 
 table{
@@ -119,6 +123,10 @@ thead th{
     padding: 1rem 1.5rem 1rem 2.5rem;
     text-align: left;
 }
+
+/* tbody.hide{
+    display: none;
+} */
 
 tbody tr:nth-child(even){
     background-color: rgba(6, 24, 28, 1);
@@ -172,4 +180,37 @@ td.user img{
 
     object-fit: cover;
     border-radius: 50%;
+}
+
+.empty-favorites.hide{
+    display: none;
+}
+
+.empty-favorites{
+    background-color: #030B0D;
+    display: flex;
+}
+
+.empty-favorites header{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.75rem;
+
+    margin: 13.125rem auto 17.938rem;
+
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.empty-favorites header h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.549;
+    color: #4E5455;
+}
+
+.empty-favorites header img{
+    width: 8.25rem;
+    height: 7.813rem;
 }
